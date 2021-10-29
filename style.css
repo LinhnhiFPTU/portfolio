@@ -1,5 +1,4 @@
-
-  html {
+ html {
 	font-size: 63%;
 	font-family: 'Roboto', sans-serif;
   }
@@ -26,23 +25,27 @@ nav {
 	background-color:azure;
 	box-shadow: 2px 2px 11px #0000002c;
 	padding: 0px;
+  
 }
 
 nav ul {
 	display: flex;
+  justify-content: center;
 }
 
 nav ul li a {
 	margin: 40px;
 	color:cadetblue;
-	font-size: 16px;
+	font-size: 25px;
 	font-weight: 400;
 }
+
 
 .text-container .title  {
 	font-weight: bold;
 	color:cornflowerblue;
-	font-size: 50px;
+	font-size: 60px;
+  padding-bottom: 15px;
 }
 span {
 	color:rgb(34, 29, 63);
@@ -62,14 +65,13 @@ span {
 	position: absolute;
 	left: 12%;
 	top: 52%;
-	transform: translate(-12%, -52%);
+	transform: translate(-5%, -250%);
 }
 
 .model {
 	height: 40%;
 	width: 40%;
-	box-align: right;
-
+	right: 60%s;
 }
 
 
@@ -78,10 +80,7 @@ span {
 
 
 /*Passion*/
-.layout-container .contact-container {
-	align-items: center;
-	justify-content: center;
-}
+
 
 .section-title {
 	font-size: 4rem;
@@ -91,12 +90,10 @@ span {
 	text-align: center;
 }
 .layout-container {
-	width: 800px;
+  align-items: center;
 	justify-content: center;
 }
 
-}
-/*Mobile*/
 .layout-container {
         display: grid;;
         grid-column-gap: 10px;
@@ -125,33 +122,13 @@ span {
 }
 
 
-/*Desktop*/
-.layout-container {
-	max-width: 1200px;
-	display: flex;
-	
-}
-.layout-image {
-	width: 500px;
-	height: 500px;
-}
-.layout-item1 {
-	flex: 2;
-}
-.layout-item2 {
-flex:1;
-}
-.layout-item3 {
-	flex: 1;
-
-}
-
 /* Contact */
 .contact-container {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 90%;
+  height: 60px;
 }
 .contact-items {
 	/* max-width: 400px; */
@@ -172,8 +149,8 @@ flex:1;
 }
 
 .contact-icon {
-	height: 100px;
-	width: 100px;
+	width: 70px;
+	margin: 0 auto;
 }
 .contact-info h3 {
     text-align: center;
