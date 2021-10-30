@@ -6,6 +6,7 @@
 	height: 100%;
 	width: 100%;
 }
+ 
 /*Home*/
 
 li {
@@ -33,8 +34,8 @@ nav ul {
   justify-content: center;
 }
 
-nav ul li a {
-	margin: 40px;
+nav ul li a{
+	margin: 0px 40px;
 	color:cadetblue;
 	font-size: 25px;
 	font-weight: 400;
@@ -80,7 +81,6 @@ span {
 
 
 /*Passion*/
-
 
 .section-title {
 	font-size: 4rem;
@@ -128,7 +128,6 @@ span {
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 90%;
-  height: 60px;
 }
 .contact-items {
 	/* max-width: 400px; */
@@ -149,7 +148,8 @@ span {
 }
 
 .contact-icon {
-	width: 70px;
+	width: 50px;
+    height: auto;
 	margin: 0 auto;
 }
 .contact-info h3 {
