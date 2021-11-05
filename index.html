@@ -2,27 +2,111 @@
 <html>
     <head>
 <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com">
+    <style>
+    body {
+      font-family: "Sofia", sans-serif; 
+    }
+    </style>
     </head>
     <body>
-
-        <!--Home-->
-        <section>
-          <nav>
-              <ul>
-        <li><a href="http://127.0.0.1:5500/index.html">About</a></li>
-        <li><a href="http://127.0.0.1:5500/passion.html">Passion</a></li>
-        <li><a href="http://127.0.0.1:5500/contact.html">Contact Me</a></li>
-      </ul>
-          </nav>
-      </section>
-    <br />
-      <div>
-        <img style="width:100%; height:100%" src="https://b.f7.photo.talk.zdn.vn/4191224921252281865/33828f595025987bc134.jpg" alt ="Me">
-      </div>
-
-        <div class="text-container">
-            <p class="title">Hello, <span>I am Linh Nhi</span></p>
-            <p style="color:;font-family:Verdana;font-size:30px;font-style:italic">I am K16 and I learn Software Engineering at FPT University</p>
+        <!--User-->
+        <div class="user-container">        
+            <div class="user-image">
+                <img style="border-radius:18px;box-shadow: 0px 0px 0px rgb(67, 67, 112);" src="J.jpg" alt ="Me">
+            </div>
+            <div class="user-info">
+                <h1>Bùi Hồ Linh Nhi</h1>
+                <div class="user-job">Student</div>
+            </div>
+        <!--End User-->     
+        <!--Contact-->      
+            <div class="contact">
+                <div class="contact-item1">
+                    <div class="contact-info">
+                       <p><b>Gmail</b></p>
+                       <p>nhibhlse160010@fpt.edu.vn</p>
+                    </div>                    
+                    <div class="contact-info">
+                        <p><b>Facebook</b></p>
+                        <p><a href="https://www.facebook.com/f.linh.nhi" id="fb">Linh Nhi</a></p>
+                    </div>
+                </div>
+     
+                <div class="contact-item2">
+                    <div class="contact-info">
+                        <p><b>Phone</b></p>
+                        <p>0829606933</p>
+                    </div>
+                    <div class="contact-info">
+                        <p><b>Address</b></p>
+                        <p>Dalat, Vietnam</p>
+                    </div> 
+                </div>           
+            </div>
         </div>
+        <!--End Contact-->
+
+    <!--More-->
+        <!--Home-->
+  <div class="more-container">
+        <div class="home-container">
+            <div class="home-item1">
+                <a href="index.html">
+                <div>
+                    <img src="about-icon.png" >
+                    <h3>About</h3>
+                </div>
+                </a>
+            </div>
+            <a href="passion.html">
+                <div class="home-item2">
+                    <div>
+                        <img src="passion-icon.png">
+                        <h3>Passion</h3>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+        <!--End Home-->
+
+        <!--About-->      
+        <div class="about-container">
+            <div class="header">
+                    <h1>Introduce</h1>
+            </div>
+            <div class="about-items">
+                    <p>Hello, I'm Linh Nhi</p>
+                    <p>I am K16 and I learn Software Engineering at FPT University</p>
+            </div>
+        
+            <!--Quotes-->
+            <div class="about-quotes">
+                <div class="header">
+                    <h1>My favorite quotes</h1>
+                </div>
+                <div class="quotes-items">
+                    <div class="quote-item">                   
+                            <img src="Barack Obama.jpg" class="people-image">
+                        <div class="item">
+                            <h2>Barack Obama</h2>
+                            <p>"The future rewards those who press on. I don't have time to feel sorry for myself. I don't have time to complain. I'm going to press on."</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px;" class="quote-item">
+                            <img style="border-radius:12px;" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Walt_Whitman_by_Mathew_Brady.jpg" class="people-image">
+                        <div class="item">
+                            <h2>Walt Whitman</h2>
+                            <p>"Keep your <span><b>FACE</b></span> always toward the <span><b>SUNSHINE</b></span> - and <span><b>SHADOWS</b></span> will fall <span><b>BEHIND</b></span>  you."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <!--End Quotes-->      
+        </div>
+        <!--End About-->
+  </div>
+    <!--End More-->                      
     </body>
-</html>
+</html> 
