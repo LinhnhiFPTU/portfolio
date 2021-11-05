@@ -1,164 +1,233 @@
  html {
-	font-size: 63%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	background-image: url("Background-image.png");
   }
-  img {
+img {
 	height: 100%;
 	width: 100%;
 }
- 
-/*Home*/
-
-li {
-	list-style: none;
+.header {
+	position: relative;
+	/*font-style: bold;*/
 }
-a {
-	text-decoration: none;
-}
-ul {
-	width: 100%;
-	height: 80vh;
-}
-
-nav {
+/*User*/
+.user-container {
 	display: flex;
-	height: 60px;
-	background-color:azure;
-	box-shadow: 2px 2px 11px #0000002c;
-	padding: 0px;
-  
+	align-items: center;
+	box-sizing: border-box;
+	background-color:rgba(250, 235, 215, 0.623);
+	border-radius: 17px;
+	margin: 30px auto;
+	max-width: 1000px;
 }
-
-nav ul {
+.user-image {
+	width:180px;
+	height:170px;
+    position: relative;
+	margin: 30px;
+}
+.user-info {
 	display: flex;
-  justify-content: center;
+	flex-direction: column;
+	margin-left: 20px;
 }
-
-nav ul li a{
-	margin: 0px 40px;
-	color:cadetblue;
-	font-size: 25px;
-	font-weight: 400;
-}
-
-
-.text-container .title  {
+.user-info h1 {
+	font-size: 30px;
 	font-weight: bold;
-	color:cornflowerblue;
-	font-size: 60px;
-  padding-bottom: 15px;
+	color:rgb(43, 33, 102);
+	position: relative;
+	top: 0px;
+} 
+/*Contact*/
+.contact {
+	display: flex;
+}
+.contact-item1 {
+	display:flex;
+	flex-direction: column;
+	position: relative;
+	left: 100px;
+}
+.contact-item2 {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: 150px;
+}
+#fb {
+text-decoration-line: none;
+}
+/*Tablet: width >= 740px and width < 1024px*/
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+	.user-container {
+		flex-direction: column;
+		margin: 30px 250px;
+		padding-bottom: 30px;
+	}
+	.user-image {
+		position: relative;
+		top: 20px;
+		margin-left: 0px;
+	}
+	.user-info {
+		position: relative;
+		top: 20px;
+		margin-left: 0px;
+		text-align: center;
+	}
+	
+	.contact {
+		flex-direction: column;
+		position: relative;
+		top: 20px;
+		align-items: flex-start;
+	}
+
+	.contact-item1, .contact-item2 {
+		position: relative;
+		left: 0px;
+	}
+}
+/*More*/
+.more-container {
+	display: flex;
+	margin: 30px auto;
+	max-width: 1000px;
+}
+/*Home*/
+.home-container {
+	width: 120px;
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color:rgba(255, 255, 255, 0.425);
+	border-radius: 17px;
+}
+.home-item1, .home-item2 {
+	width: 80px;
+	text-align: center;
+	position: relative;
+}
+.home-container h3 {
+	position: relative;
+	text-decoration-line: none;
+}
+/*About*/
+.about-container {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color:rgba(255, 255, 255, 0.425);
+	border-radius: 12px;
+	position: relative;
+	margin-left: 30px;
+	padding: 30px;
+}
+.about-items p{
+	margin: 10px 0px 30px;
+	color: black;
+	font-family: Verdana;
+	font-size: 20px;
+	font-style: italic;
+}
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+	.more-container {
+		flex-direction: column;
+		margin: 30px 250px 0px;
+	}
+	.home-container {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-around;
+		position:relative;
+		bottom: 0px;
+	}
+	.about-container {
+		width: 100%;
+		position: relative;
+		top: 30px;
+		margin-left: 0px;
+	}
+}
+/*Quotes*/
+.about-quotes {
+	padding-top: 80px;
+}
+.quotes-items {	
+	display: flex;
+	flex-direction: column;
+}
+.quote-item {
+	padding: 20px;
+	display: flex;
+	box-sizing: border-box;
+	background-image: url("Background-quotes.jpg");
+	border-radius: 12px;
+	font-size: 20px;
+}
+.people-image {
+	width:120px;
+	height:100%;
+	border-radius: 12px;
+}
+.item {
+	position: relative;
+	padding: 0px 10px;
 }
 span {
-	color:rgb(34, 29, 63);
+	font-style: italic;
+	color: rgba(218, 107, 66, 0.89);
 }
-
-.text-container .content {
-	font-family: myriad pro regular;
-	font-size: 30px;
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+	.quote-item {
+		flex-direction: column;
+		text-align: center;
+	}
+	.people-image {
+		margin: auto;
+	}
 }
-
-.text-container p{
-	line-height: 0px;
-	margin: 45px 0px 25px;
-}
-
-.text-container {
-	position: absolute;
-	left: 12%;
-	top: 52%;
-	transform: translate(-5%, -250%);
-}
-
-.model {
-	height: 40%;
-	width: 40%;
-	right: 60%s;
-}
-
-
-
-
-
-
 /*Passion*/
-
-.section-title {
-	font-size: 4rem;
-	font-weight: 300;
-	color: black;
-	margin-bottom: 20px;
-	text-align: center;
-}
-.layout-container {
-  align-items: center;
-	justify-content: center;
-}
-
-.layout-container {
-        display: grid;;
-        grid-column-gap: 10px;
-        grid-row-gap: 20px;
-        overflow: hidden;
-        max-width: 800px;
-        margin: auto;
-    }
-.layout-item1 {
-        grid-area: myArea;
-      }
-.layout-container {
-        display: grid;
-        grid-template-areas: 'myArea myArea';
-        grid-gap: 30px;
-      }
-
-.layout-image {
-    width: 100%;
-    height: 350px;
-    border-radius: 12px;
-}
-
-.layout-item1 .layout-image {
-    height: 500px;
-}
-
-
-/* Contact */
-.contact-container {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	width: 90%;
-}
-.contact-items {
-	/* max-width: 400px; */
-	width: 100%;
-}
-.contact-item {
-	width: 80%;
-    padding:20px;
-	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 30px;
+.passion-container {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
+	box-sizing: border-box;
+	border-radius: 12px;
+	background-color:rgba(255, 255, 255, 0.425);
+	position: relative;
+	margin-left: 30px;
+	padding: 30px;
 }
-
-.contact-icon {
-	width: 50px;
-    height: auto;
+.layout-container, .rubik-container, .travel-container {
 	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 30px;
 }
-.contact-info h3 {
-    text-align: center;
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin-bottom: 5px;
+.layout-image, .rubik-image, .travel-image {
+	border-radius: 12px;
+	margin-right: 20px;
 }
-.contact-info h4 {
-    text-align: center;
-	font-weight: 500;
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+	.more-container {
+		flex-direction: column;
+		margin: 30px 250px 0px;
+	}
+	.home-container {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-around;
+		position:relative;
+		bottom: 0px;
+	}
+	.passion-container {
+		width: 100%;
+		position: relative;
+		top: 30px;
+		margin-left: 0px;
+	}
 }
