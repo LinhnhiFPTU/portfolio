@@ -236,6 +236,8 @@ span {
 		margin-top: 20px;
 	}
 	.layout-image, .rubik-image, .travel-image {
+	  	width: 250px;
+		height: 230px;
 		border-radius: 20px;
 		margin-top: 20px;
 	}
