@@ -230,4 +230,13 @@ span {
 		top: 30px;
 		margin-left: 0px;
 	}
+	.layout-container, .rubik-container, .travel-container {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	.layout-image, .rubik-image, .travel-image {
+		border-radius: 20px;
+		margin-top: 20px;
+	}
 }
